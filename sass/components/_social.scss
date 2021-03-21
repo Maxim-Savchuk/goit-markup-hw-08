@@ -1,0 +1,41 @@
+.social {
+  margin-left: 70px;
+  padding: 12px 0 40px 0;
+}
+
+.social__list {
+  display: flex;
+}
+
+.social__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social__link {
+  display: block;
+  width: 44px;
+  height: 44px;
+  padding: 12px 12px;
+  border-radius: 50%;
+
+  fill: $white-color;
+  background-color: rgba(255, 255, 255, 0.1);
+
+  @include transition(background-color);
+
+  &:hover,
+  &:focus {
+    background-color: $blue-text-color;
+  }
+}
+
+.social__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1;
+  text-transform: uppercase;
+
+  color: $white-color;
+
+  margin-bottom: 20px;
+}

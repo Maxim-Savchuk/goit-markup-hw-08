@@ -1,0 +1,44 @@
+.clients {
+  padding: 94px 0;
+}
+
+.clients__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+
+  color: $black-heading-menu;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.clients__list {
+  display: flex;
+  justify-content: center;
+}
+
+.clients__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.clients__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 90px;
+
+  fill: $social-company-icons-color;
+  border: 1px solid $social-company-icons-color;
+  border-radius: 4px;
+
+  transition-property: fill, border-color;
+  transition-duration: $animation-duration;
+  transition-timing-function: $cubic-bezier;
+
+  &:hover,
+  &:focus {
+    fill: $blue-text-color;
+    border-color: $blue-text-color;
+  }
+}

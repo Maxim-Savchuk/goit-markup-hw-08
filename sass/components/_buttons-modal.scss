@@ -1,0 +1,52 @@
+.modal__closebutton {
+  display: inline-flex;
+
+  padding: 5px;
+  max-width: 30px;
+  max-height: 30px;
+
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  fill: rgba(0, 0, 0, 1);
+
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: $white-color;
+
+  @include transition(fill);
+
+  &:hover,
+  &:focus {
+    fill: $blue-text-color;
+  }
+}
+
+.modal__sendbutton {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
+  align-items: center;
+  text-align: center;
+
+  color: $white-color;
+  background-color: $blue-text-color;
+
+  max-width: 200px;
+  height: 50px;
+  padding: 10px 55px 10px 56px;
+  margin: 30px 124px 0;
+
+  border-style: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  @include transition(background-color);
+
+  &:hover,
+  &:focus {
+    background-color: rgba(24, 140, 232, 1);
+  }
+}

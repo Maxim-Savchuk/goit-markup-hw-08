@@ -1,0 +1,37 @@
+.features {
+  padding: 94px 0;
+}
+
+.features__list {
+  display: flex;
+}
+
+.features__item {
+  width: 270px;
+}
+
+.features__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.features__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1;
+  text-transform: uppercase;
+
+  color: $black-heading-menu;
+  margin-bottom: 10px;
+}
+
+.features__text {
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.features__icon {
+  background-color: $features-icon-bg;
+
+  padding: 25px 100px;
+  margin-bottom: 30px;
+}
