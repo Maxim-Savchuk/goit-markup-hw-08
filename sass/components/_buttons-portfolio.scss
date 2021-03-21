@@ -1,11 +1,29 @@
 .portfolio-buttons__list {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-bottom: 40px;
+
+  @media screen and(min-width: 768px) {
+    margin-bottom: 30px;
+    justify-content: center;
+  }
+  @media screen and(min-width: 1200px) {
+    margin-bottom: 50px;
+  }
 }
 
-.portfolio-buttons__item:not(:last-child) {
-  margin-right: 8px;
+.portfolio-buttons__item {
+  &:not(:last-child) {
+    margin-right: 8px;
+  }
+  @media screen and(max-width: 767px) {
+    margin-bottom: 15px;
+
+    &:nth-last-of-type(-n+2) {
+      margin-bottom: unset;
+    }
+  }
 }
 
 .portfolio-buttons__button {
