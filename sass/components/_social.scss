@@ -1,14 +1,24 @@
 .social {
-  margin-left: 70px;
-  padding: 12px 0 40px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 60px;
+  @media screen and(min-width: 1200px) {
+    padding-top: 12px;
+    align-items: flex-start;
+    margin-left: 70px;
+    margin-bottom: unset;
+  }
 }
 
 .social__list {
   display: flex;
 }
 
-.social__item:not(:last-child) {
-  margin-right: 10px;
+.social__item {
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
 }
 
 .social__link {

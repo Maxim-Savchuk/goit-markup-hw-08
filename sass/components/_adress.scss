@@ -1,9 +1,26 @@
 .adress {
   margin-top: 20px;
+  margin-bottom: 60px;
+  @media screen and(min-width: 1200px) {
+    margin-bottom: unset;
+  }
 }
 
-.adress__item:not(:last-child) {
-  margin-bottom: 9px;
+.adress__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media screen and(min-width: 1200px) {
+    align-items: flex-start;
+    width: 231px;
+  }
+}
+
+.adress__item {
+  &:not(:last-child) {
+    margin-bottom: 9px;
+  }
 }
 
 .adress__location {
