@@ -1,0 +1,118 @@
+
+
+.menu__button {
+  display: inline-flex;
+  padding: 0;
+  margin: 0;
+  margin-left: auto;
+  border: none;
+  background-color: transparent;
+
+  @media screen and(min-width: 768px) {
+    display: none;
+  }
+}
+
+.menu__button-close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  width: 40px;
+  height: 40px;
+  padding-top: 11px;
+  padding-left: 11px;
+  margin: 0;
+
+  display: inline-flex;
+  border: none;
+  background-color: transparent;
+
+  &:hover {
+    fill: $blue-text-color;
+  }
+}
+
+.menu__container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 48px 40px;
+  background-color: white;
+  transform: translateX(100%);
+  z-index: 999;
+
+  @include transition(transform);
+  
+  &.is-open {
+    transform: translateX(0);
+  }
+}
+
+.menu__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu__link {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.02em;
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+
+  color: $black-heading-menu;
+
+  @include transition(color);
+
+  &--active {
+    color: $blue-text-color;
+  }
+
+  &:hover,
+  &:focus {
+    color: $blue-text-color;
+  }
+}
+
+.menu__contacts-item {
+  &:first-child {
+    margin-bottom: 32px;
+  }
+
+  &:last-child {
+    margin-bottom: 64px;
+  }
+}
+
+.menu__link-tel {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  color: $blue-text-color;
+}
+
+.menu__link-mail {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: 0.02em;
+  color: inherit;
+}
+
+.menu__social {
+  display: inline-flex;
+  justify-content: space-between;
+}
+
+.menu__link-soc {
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 0.02em;
+  color: $blue-text-color;
+}

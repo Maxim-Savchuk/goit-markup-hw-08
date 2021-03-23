@@ -1,8 +1,11 @@
 .page-header {
+  position: relative;
   border-bottom: 1px solid $header-border;
 }
 
 .header__container {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
+

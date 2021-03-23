@@ -3,11 +3,10 @@
   top: 50%;
   left: 50%;
 
-  max-width: 528px;
-  height: 581px;
   width: 100%;
   max-height: 100vh;
   padding: 40px;
+
 
   border-radius: 4px;
 
@@ -17,6 +16,15 @@
 
   transform: translate(-50%, -50%) scale(1);
   @include transition(transform);
+
+  @media screen and(min-width: 480px) {
+    max-width: 450px;
+    max-height: 609px;
+  }
+  @media screen and(min-width: 1200px) {
+    max-width: 528px;
+    max-height: 581px;
+  }
 }
 
 .modal__title {
@@ -24,11 +32,15 @@
 
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
-
+  line-height: 1.5;  
   text-align: center;
 
   color: $black-heading-menu;
+
+  @media screen and(min-width: 1200px) {
+    font-size: 20px;
+    line-height: 1.15;
+  }
 }
 
 .modal__label {
