@@ -44,8 +44,7 @@
   background-color: white;
   transform: translateX(100%);
   z-index: 999;
-
-  @include transition(transform);
+  overflow-y: auto @include transition(transform);
 
   &.is-open {
     transform: translateX(0);
