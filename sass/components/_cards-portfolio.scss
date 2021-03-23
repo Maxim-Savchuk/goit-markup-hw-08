@@ -1,6 +1,5 @@
 .portfolio-cards__list {
-
-  @media screen and(min-width: 768px){
+  @media screen and(min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
     margin-top: -30px;
@@ -10,7 +9,7 @@
 
 .card {
   outline: 1px solid $portf-border;
-  
+
   width: 450px;
 
   &:not(:last-child) {
@@ -19,7 +18,7 @@
 
   @include transition(box-shadow);
 
-  @media screen and(min-width: 768px){
+  @media screen and(min-width: 768px) {
     width: 354px;
     margin-top: 30px;
     margin-left: 30px;
@@ -70,7 +69,7 @@
 }
 
 .card-overlay {
-  padding: 63px 24px;
+  padding: 77px 24px;
 
   position: absolute;
   left: 0;
@@ -83,6 +82,17 @@
 
   transform: translateY(101%);
   @include transition(transform);
+
+  @media screen and(min-width: 768px) {
+    padding: 49px 24px;
+  }
+  @media screen and(min-width: 1200px) {
+    padding: 63px 24px;
+  }
+}
+
+.card__img {
+  max-height: 294px;
 }
 
 .card-overley__text {
