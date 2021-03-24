@@ -57,10 +57,6 @@
   &:not(:last-child) {
     margin-bottom: 32px;
   }
-
-  &:last-child {
-    margin-bottom: 302px;
-  }
 }
 
 .menu__link {
@@ -135,4 +131,10 @@
   font-size: 18px;
   letter-spacing: 0.02em;
   color: $blue-text-color;
+}
+
+.menu__downcontainer {
+  position: absolute;
+  bottom: 48px;
+  left: 40px;
 }
