@@ -93,6 +93,10 @@
 
 .card__img {
   max-height: 294px;
+
+  @media screen and(min-width: 768px) and(max-width: 1199px) {
+    max-width: 354px;
+  }
 }
 
 .card-overley__text {

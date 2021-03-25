@@ -1666,6 +1666,12 @@ body {
   max-height: 294px;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .card__img {
+    max-width: 354px;
+  }
+}
+
 .card-overley__text {
   font-size: 18px;
   line-height: 1.6;
@@ -1959,7 +1965,6 @@ body {
 
 .menu__downcontainer {
   position: absolute;
-  top: auto;
   bottom: 48px;
   left: 40px;
 }
